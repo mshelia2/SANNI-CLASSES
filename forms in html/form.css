@@ -1,0 +1,123 @@
+/* General page styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  background-image: url('RESTURANT.png');
+  background-size: cover;
+  background-position: center;
+
+  background-color: black;
+}
+
+
+/* Transparent glass form */
+form {
+  width: 100%;
+  max-width: 450px;
+  padding: 35px;
+
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Form labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Input fields and message box */
+input,
+textarea {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 22px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+
+  color: #ffffff;
+  font-size: 15px;
+  font-family: inherit;
+
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Placeholder text */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus effects */
+input:focus,
+textarea:focus {
+  border-color: #a78bfa;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+}
+
+/* Message field */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #818cf8, #a78bfa);
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(129, 140, 248, 0.35);
+}
+
+/* Button click effect */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  form {
+    padding: 25px 20px;
+  }
+}
